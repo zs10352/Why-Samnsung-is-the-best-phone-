@@ -23,6 +23,7 @@
             padding: 20px;
             background-color: white;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         h1 {
             color: #0073e6;
@@ -33,6 +34,9 @@
             height: auto;
             border-radius: 8px;
             margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
         footer {
             text-align: center;
@@ -46,6 +50,20 @@
         .content {
             display: flex;
             justify-content: space-between;
+            align-items: center;
+        }
+        .content p {
+            flex: 1;
+            padding-right: 20px;
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content p {
+                padding-right: 0;
+            }
         }
     </style>
 </head>
@@ -63,7 +81,7 @@
                 Founded in 1938 by Lee Byung-chul, Samsung has grown into a global leader in technology and innovation.
             </p>
             <!-- Replace this placeholder with your own image URL or local file -->
-            <img src="https://www.bell.ca/Styles/images/Samsung_Galaxy_Z_Flip6_silver_shadow_AI_lrg1_EN.png   " alt="Samsung Flip Phone">
+            <img src="https://www.bell.ca/Styles/images/Samsung_Galaxy_Z_Flip6_silver_shadow_AI_lrg1_EN.png" alt="Samsung Flip Phone">
         </div>
     </section>
 
@@ -83,3 +101,4 @@
     </footer>
 </body>
 </html>
+
